@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Machine Learning Module"
+permalink: /mymodule/
+author_profile: false
+---
+
+{% include base_path %}
+This module introduces machine learning with a practical approach, providing hands-on cases of real-world data analytics.
+
+You will gain a conceptual understanding of the underlying theories and practices involved in machine learning. The material evolves gradually, starting with underlying mathematical concepts followed by a framework of learning models. Various paradigms and algorithms are covered thereafter, offering you the theory alongside a wealth of practical case implementation with software. The final stage is a systematic approach to designing a complete application system that makes use of more than one component of machine learning.
+
+{% assign sorted_units = site.mymodule | sort: "order" %}
+{% for post in sorted_units %}
+  {% include archive-single.html %}
+{% endfor %}
+
